@@ -1,0 +1,151 @@
+---
+import ProjectItem from '../components/ProjectItem.astro'
+import Shell from '../layouts/Shell.astro'
+
+const startups = [
+  {
+    title: 'TrimTrend',
+    url: 'trimtrend.pro',
+    description:
+      'This is a SaaS project I founded; an e-commerce enabler. Think Shopify but tailored for the Ghanaian merchant. Currently hosting 1000+ shops and processing tens of orders a week. Free to get started',
+    meta: '2021—date',
+  },
+
+  {
+    title: 'LeaseHub',
+    url: 'leasehub.yeboahdacosta.com',
+    description:
+      'This is a SaaS project I founded; an e-commerce enabler. Think Shopify but tailored for the Ghanaian merchant. Currently hosting 1000+ shops and processing tens of orders a week. Free to get started',
+    meta: '2021—date',
+  },
+  
+  {
+    title: 'AfroDish',
+    url: 'afrodish.yeboahdacosta.com',
+    description:
+      'This is a SaaS project I founded; an e-commerce enabler. Think Shopify but tailored for the Ghanaian merchant. Currently hosting 1000+ shops and processing tens of orders a week. Free to get started',
+    meta: '2021—date',
+  },
+  
+  {
+    title: 'VisitWise',
+    url: 'visitwise.yeboahdacosta.com',
+    description:
+      'This is a SaaS project I founded; an e-commerce enabler. Think Shopify but tailored for the Ghanaian merchant. Currently hosting 1000+ shops and processing tens of orders a week. Free to get started',
+    meta: '2021—date',
+  }, 
+  
+  {
+    title: 'MeetHere',
+    url: 'meethere-ui.yeboahdacosta.com',
+    description:
+      'This is a SaaS project I founded; an e-commerce enabler. Think Shopify but tailored for the Ghanaian merchant. Currently hosting 1000+ shops and processing tens of orders a week. Free to get started',
+    meta: '2021—date',
+  },   
+
+]
+
+const apps = [
+  {
+    title: 'DotLocal',
+    description: 'Mirror your production domains on your .local machine',
+    url: 'degreat.co.uk/dotlocal',
+  },
+  {
+    title: '3e',
+    description: 'Next level 3d workflow inside VSCode.',
+    url: 'github.com/blackmann/3e',
+  },
+  {
+    title: 'stylebender',
+    description:
+      'Generate your styles how you want them and build rapidly. Opensource too.',
+    url: 'stylebender.vercel.app',
+    tags: ['abandoned'],
+  },
+  {
+    title: 'Many Things',
+    description:
+      'Inspired by 1Thing by sindresorhus. 1Thing allowed for setting one goal at a time. But I also needed to be reminded about other stuff — many things. This app runs in the menu bar.',
+    url: 'github.com/blackmann/ManyThings',
+    meta: 'Mac Only',
+  },
+  {
+    title: 'Sawside',
+    description:
+      'How about you make real new friends this new year? That was the tagline. This app was left in TestFlight. Might revive it again.',
+    url: 'sawside.com',
+    meta: 'iOS only',
+    tags: ['abandoned'],
+  },
+  {
+    title: 'aaccraa.com',
+    description:
+      'Connecting strangers and building real connections with live video. Spent a weekend on this proof-of-concept. Deployed midweek and had a surge of 2000 unique visits by end of week.',
+    url: 'aaccraa.com',
+    meta: 'Not restricted to just Accra 🇬🇭',
+  },
+  {
+    title: 'Wipe_Modules',
+    description:
+      "Clean all node_modules from projects that have turned stale. You can select the folder where you keep all your projects and it'll recursively scan for node_modules folders.",
+    meta: 'Mac only',
+    url: 'github.com/blackmann/Wipe_Modules',
+  },
+]
+
+const papers = [
+  {
+    title: 'A PheWAS Model of Autism Spectrum Disorder',
+    description: 'A PheWAS Model of Autism Spectrum Disorder',
+    url: 'github.com/blackmann/react-chat-input',
+    meta: 'Stalled development',
+  },
+  {
+    title: 'A deep learning model to predict traumatic brain injury severity and outcome from MR images',
+    description: 'Discord inspired navigation for Flutter apps',
+    url: 'github.com/blackmann/overlapping_panels',
+  },
+  {
+    title: 'Statistical Comparative Analysis and Evaluation of Validation Indices for Clustering Optimization',
+    description: 'Discord inspired navigation for Flutter apps',
+    url: 'github.com/blackmann/overlapping_panels',
+  },
+  {
+    title: 'An Explainable and Statistically Validated Ensemble Clustering Model Applied to the Identification of Traumatic Brain Injury Subgroups',
+    description: 'Discord inspired navigation for Flutter apps',
+    url: 'github.com/blackmann/overlapping_panels',
+  },
+  {
+    title: 'Heterogeneity in blood biomarker trajectories after mild TBI revealed by unsupervised learning',
+    description: 'Discord inspired navigation for Flutter apps',
+    url: 'github.com/blackmann/overlapping_panels',
+  },      
+]
+---
+
+<Shell title="Projects" description="Stuff I have worked on.">
+  <main class="container mx-auto mt-[8rem]">
+    <h1 class="mb-[2rem] text-2xl font-bold">Projects</h1>
+
+    <p class="page-half">
+      I've tried many and a lot of things. These are the ones I could collect
+      and showcase; or just proud of them.
+    </p>
+
+    <h2 class="mb-4 mt-5 text-lg font-medium">Startups</h2>
+    <div class="grid grid-cols-1 gap-4 gap-y-8 lg:grid-cols-3">
+      {startups.map((project) => <ProjectItem project={project} />)}
+    </div>
+
+    <h2 class="mb-4 mt-[5rem] text-lg font-medium">Apps</h2>
+    <div class="grid grid-cols-1 gap-4 gap-y-8 lg:grid-cols-3">
+      {apps.map((project) => <ProjectItem project={project} />)}
+    </div>
+
+    <h2 class="mb-4 mt-[5rem] text-lg font-medium">Research Publications</h2>
+    <div class="grid grid-cols-1 gap-4 gap-y-8 lg:grid-cols-3">
+      {papers.map((project) => <ProjectItem project={project} />)}
+    </div>
+  </main>
+</Shell>
