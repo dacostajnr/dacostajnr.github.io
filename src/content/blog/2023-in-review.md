@@ -44,7 +44,7 @@ My resolve in getting this product ready was founded in the fact that I believed
 
 ---
 
-So basically I approached this project using industry standards while applying the lessons I learned from running [Adeton](https://adeton.io). I'm not new to the startup business. I'm also not new to leading a project.
+So basically I approached this project using industry standards while applying the lessons I learned from running [Adeton](#). I'm not new to the startup business. I'm also not new to leading a project.
 
 But my values and that of the team were parallel.
 
@@ -110,9 +110,9 @@ Oh my.
 
 I put 3d into VS Code. The internet was blown away. See [this tweet](https://x.com/_yogr/status/1681344030943199243?s=20)
 
-<a  href="https://x.com/_yogr/status/1681344030943199243?s=20"><img class="rounded-lg" alt="3e Tweet" src="/tweet-1681344030943199243.jpeg" width="400" /></a>
+<a  href="#"><img class="rounded-lg" alt="3e Tweet" src="/tweet-1681344030943199243.jpeg" width="400" /></a>
 
-See project here: https://github.com/blackmann/3e
+See project here: #
 
 ### Mangobase
 
@@ -122,7 +122,7 @@ FeathersJS v4 was a beautiful framework until v5 changed everything and made it 
 
 I needed to move away from it. So I built Mangobase which copies a lot of concepts from Feathers (v4) and includes UI to do low-code stuff.
 
-Check it out here: https://degreat.co.uk/mangobase
+Check it out here: #
 
 There are some Youtube videos here demonstrating how it works: [Mangobase](https://www.youtube.com/playlist?list=PL9GS2OgSAAFJdG4kJtYH_N0ioJBmK7wcG)
 
@@ -154,7 +154,7 @@ All merged. 😊
 
 I thought the conversations we have in our local community can make use of some variety so I introduced a course on 3d modelling with Blender to inspire people to pick up a new skill that can grow into something.
 
-Here's the course: [Introduction to Modeling with Blender](https://www.youtube.com/playlist?list=PL9GS2OgSAAFLqiPzLVhJ1BZ7GqDX47y38)
+Here's the course: [Introduction to Modeling with Blender](#)
 
 Though not the _whole world_ picked it up, the few people that did really impressed me. That was nice!
 
@@ -162,7 +162,7 @@ Though not the _whole world_ picked it up, the few people that did really impres
 
 I mostly played FIFA with my friends[^4]. One fun thing I did in 2023 was go ride a quad bike in the Eastern Region with some friends. We went through the woods — riding over rocks and climbing hills. Bumpy! It was actually very memorable to me.
 
-[^4]: We normally play against each other in my [Discord server](https://discord.gg/5CDnysz).
+[^4]: We normally play against each other in my [Discord server](#).
 
 <img class="rounded-lg" src="/atv-2023.jpg" alt="ATV Ride" width="400" />
 

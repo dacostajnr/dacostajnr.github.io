@@ -13,20 +13,20 @@ const featuredLinks = [
 		title: "Mangobase 🥭",
 		description:
 			"Low-code Javascript backend framework for Node and Bun runtimes.",
-		link: "degreat.co.uk/mangobase",
+		link: "#",
 		featureImage: MangobaseFeatureImage,
 	},
 	{
 		title: "Adeton",
 		description:
 			"This is a SaaS project I founded; an e-commerce enabler. Think Shopify but tailored for the Ghanaian merchant.",
-		link: "adeton.io",
+		link: "#",
 	},
 	{
 		title: "Devlog",
 		description:
 			"This is a Youtube channel I share progress on stuff I'm working on. It's fun, check it out!",
-		link: "youtube.com/@notgr",
+		link: "#",
 		footer: "Please subscribe",
 	},
 ];
