@@ -1,0 +1,34 @@
+---
+import { SITE_HOST } from '../consts'
+import Link from './Link.astro'
+
+interface Props {
+  href: string
+}
+
+const { href } = Astro.props
+const url = new URL(Astro.props.href)
+
+const isGithub = url.hostname === 'github.com'
+const isHome = url.hostname === SITE_HOST
+let label = isGithub
+  ? url.pathname.split('/').pop()
+  : isHome
+    ? url.pathname
+    : url
+
+const icon = isGithub
+  ? 'i-lucide-github'
+  : isHome
+    ? 'i-lucide-warehouse'
+    : 'i-lucide-globe'
+---
+
+<Link
+  className="inline-flex gap-1 rounded-full bg-zinc-100 px-1.5 font-medium text-zinc-600 no-underline dark:bg-neutral-700 dark:text-neutral-300"
+  href={href}>
+  <div class:list={[icon, 'mt-0.75 opacity-70']}></div>
+  <spa class="flex-1 break-all">
+    {label}
+  </spa>
+</Link>
