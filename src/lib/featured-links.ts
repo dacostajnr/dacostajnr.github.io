@@ -10,7 +10,7 @@ const featuredLinks = [
 	// 	link: 'sb.degreat.co.uk',
 	// },
 	{
-		title: "Mangobase 🥭",
+		title: "Mangobases 🥭",
 		description:
 			"Low-code Javascript backend framework for Node and Bun runtimes.",
 		link: "#",
