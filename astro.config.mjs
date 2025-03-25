@@ -12,7 +12,7 @@ import rehypeKatext from "rehype-katex";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://yeboahacosta.com",
+	site: "https://yeboahdacosta.com",
 	integrations: [
 		mdx(),
 		sitemap(),
