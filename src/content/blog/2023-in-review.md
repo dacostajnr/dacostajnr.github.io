@@ -122,7 +122,7 @@ FeathersJS v4 was a beautiful framework until v5 changed everything and made it 
 
 I needed to move away from it. So I built Mangobase which copies a lot of concepts from Feathers (v4) and includes UI to do low-code stuff.
 
-Check it out here: https://degreat.co.uk/mangobase
+Check it out here: https://www.yeboahdacosta.com/mangobase
 
 There are some Youtube videos here demonstrating how it works: [Mangobase](https://www.youtube.com/playlist?list=PL9GS2OgSAAFJdG4kJtYH_N0ioJBmK7wcG)
 
@@ -136,7 +136,7 @@ If you're a web developer, there are a number cases where using domain names oth
 
 To address this, I built DotLocal to help replicate production domains (if you will) on local. This way, you don't have to test in production.
 
-Check it out from here: https://degreat.co.uk/dotlocal. Though it's free, consider buying a (one-time) license to support me. 😊
+Check it out from here: https://www.yeboahdacosta.com/dotlocal. Though it's free, consider buying a (one-time) license to support me. 😊
 
 > This is the first tool I ever published with billing and I was thrilled to get 3 sales on the first day of launch.
 

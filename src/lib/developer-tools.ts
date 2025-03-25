@@ -9,7 +9,7 @@ const developerTools = [
     title: 'DotLocal',
     description:
       'Mirror your production domains on your .local machine',
-    url: 'degreat.co.uk/dotlocal',
+    url: 'www.yeboahdacosta.com/dotlocal',
   },
   {
     title: 'Wipe_Modules',

@@ -127,7 +127,7 @@ function SiteTag({ resources }: Pick<Props, "resources">) {
 					background: "#41AA4C2E",
 				}}
 			>
-				<div style={{ color: "white" }}>degreat.co.uk</div>
+				<div style={{ color: "white" }}>www.yeboahdacosta.com</div>
 				<div style={{ color: "#67C571" }}>/blog</div>
 				<img
 					height={20}

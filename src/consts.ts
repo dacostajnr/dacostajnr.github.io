@@ -4,4 +4,4 @@
 export const SITE_TITLE = "Jnr";
 export const SITE_DESCRIPTION =
 	"Home of the Super Creative 🏄🏽. Find my writings, projects, courses and artworks here.";
-export const SITE_HOST = "degreat.co.uk";
+export const SITE_HOST = "www.yeboahdacosta.com";

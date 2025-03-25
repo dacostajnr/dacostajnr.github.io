@@ -7,7 +7,7 @@ tags:
   - Embedded Systems
 ---
 
-While working on [mangobase](https://degreat.co.uk/mangobase), it took me trial and errors to set up Github Actions to automatically publish the packages. Mangobase consists of a number packages and I wanted to automatically version and publish them when a new commit is pushed or merged to the `master` branch.
+While working on [mangobase](https://www.yeboahdacosta.com/mangobase), it took me trial and errors to set up Github Actions to automatically publish the packages. Mangobase consists of a number packages and I wanted to automatically version and publish them when a new commit is pushed or merged to the `master` branch.
 
 <div class="scheme-img">
   <img src="/ci-try-errors-light.png">
