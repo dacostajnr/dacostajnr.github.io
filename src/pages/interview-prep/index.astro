@@ -1,0 +1,47 @@
+---
+import Shell from '../../layouts/Shell.astro'
+import interviewCategories from '../../lib/interview-prep'
+
+const totalQuestions = interviewCategories.reduce(
+  (sum, category) => sum + category.questions.length,
+  0,
+)
+---
+
+<Shell
+  title="Interview prep"
+  description="Practice senior-level interview questions and answers by category.">
+  <main class="container mx-auto mt-[8rem] min-h-[60vh]">
+    <h1 class="mb-2 text-lg font-bold">Interview Prep</h1>
+    <p class="text-secondary max-w-[680px]">
+      First-pass senior interview prompts and model answers across backend,
+      JavaScript/TypeScript, algorithms, and system design topics.
+    </p>
+
+    <p class="text-secondary mt-4 text-sm">
+      {interviewCategories.length} categories · {totalQuestions} sample questions
+    </p>
+
+    <section class="mt-8 grid grid-cols-1 gap-3 md:grid-cols-2">
+      {
+        interviewCategories.map((category) => (
+          <article class="card p-4">
+            <div class="mb-2 flex items-center justify-between gap-2">
+              <h2 class="m-0 text-base font-bold">{category.title}</h2>
+              <span class="rounded-md bg-zinc-100 px-2 py-1 text-xs dark:bg-neutral-800">
+                {category.level}
+              </span>
+            </div>
+            <p class="text-secondary mt-0 text-sm">{category.summary}</p>
+            <p class="text-secondary mt-2 text-xs">
+              {category.questions.length} questions
+            </p>
+            <a class="mt-2 inline-block font-medium" href={`/interview-prep/${category.slug}`}>
+              Open category →
+            </a>
+          </article>
+        ))
+      }
+    </section>
+  </main>
+</Shell>

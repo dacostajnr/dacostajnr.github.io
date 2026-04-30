@@ -1,0 +1,36 @@
+---
+import Shell from '../../layouts/Shell.astro'
+import interviewCategories from '../../lib/interview-prep'
+
+export function getStaticPaths() {
+  return interviewCategories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }))
+}
+
+const { category } = Astro.props
+---
+
+<Shell
+  title={`${category.title} interview prep`}
+  description={`Senior-level ${category.title} interview questions and answers.`}>
+  <main class="container mx-auto mt-[8rem] min-h-[60vh]">
+    <a class="text-sm font-medium" href="/interview-prep">← Back to Interview Prep</a>
+    <h1 class="mb-2 mt-3 text-lg font-bold">{category.title}</h1>
+    <p class="text-secondary max-w-[720px]">{category.summary}</p>
+
+    <section class="mt-8 space-y-4">
+      {
+        category.questions.map((item, index) => (
+          <article class="card p-4">
+            <h2 class="m-0 text-base font-bold">
+              Q{index + 1}. {item.question}
+            </h2>
+            <p class="mt-3 mb-0 leading-relaxed">{item.answer}</p>
+          </article>
+        ))
+      }
+    </section>
+  </main>
+</Shell>
